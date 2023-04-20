@@ -1,0 +1,200 @@
+@import url(common.css);
+@import url(header.css);
+@import url(tfooter.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GyeonggiTitleM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+body{color:#222;}
+
+main{
+  display: flex;
+  justify-content: center;
+}
+.section{
+  margin: auto;
+  width: 1600px;
+}
+.s_banner{
+  z-index: -1;
+  margin-top: 80px;
+  width: 1600px;
+  height: 800px;
+}
+main img{
+  background-size: cover;
+  width: 1600px;
+  height: 800px;
+}
+.content1{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content1_con{
+  margin-top: 50px;
+  box-shadow: 0px 0px 5px rgba(121, 121, 121, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 450px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+.content1_con img{
+  width: 450px;
+  height: 250px;
+}
+.content1 h2{
+  font-family: 'GyeonggiTitleM';
+  line-height: 55px;
+  font-size: 50px;
+  margin-right: 150px;
+  color: #889481;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.con_text{
+  margin-top: 20px;
+  text-align: center;
+}
+.con_text p:nth-child(1){
+  font-size: 25px;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+.con_text p:nth-child(2){
+  margin-top: 35px;
+  margin-left: 160px;
+  width: 130px;
+  height: 40px;
+  background-color: #ebcf73;
+  border-radius: 20px;
+}
+.con_text p a{
+  display: block;
+  padding-top: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* content2 */
+
+.content2{
+  margin-top: 50px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.content2_in{
+  text-align: center;
+  margin-top: 150px;
+}
+.content2_in h2{
+  font-family: 'GyeonggiTitleM';
+  line-height: 55px;
+  font-size: 50px;
+  color: #889481;
+  font-weight: 800;
+}
+.content2 div{
+  margin-right: 170px;
+}
+.content2 div img{
+  width: 400px;
+  height: 300px;
+}
+.content2 ul li{
+  margin-top: 10px;
+}
+.content2 ul li img{
+  margin-right: 10px;
+}
+.content2 ul li span{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.content3{
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+}
+.content3_text{
+  margin-top: 150px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.content3_text h3{
+  font-size: 30px;
+}
+.content3_text h2{
+  font-family: 'GyeonggiTitleM';
+  line-height: 55px;
+  font-size: 50px;
+  font-weight: 800;
+  color: #889481;
+}
+.content3_in{
+  display: flex;
+  justify-content: space-between;
+}
+.content3_in1{
+  position: relative;
+  width: 350px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.content3_in1 img{
+  width: 350px;
+  height: 270px;
+}
+.content3_intext{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 350px;
+  height: 170px;
+  text-align: center;
+  padding-top: 20px;
+  bottom: -130px;
+  transition: 0.5s;
+}
+.content3_intext p:nth-of-type(1){
+  color: #727272;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+.content3_intext h2{
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+.content3_intext a{
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #ebcf73;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(34, 34, 34, 0.8);
+}
+.content3_intext:hover{
+  bottom:0px;
+}

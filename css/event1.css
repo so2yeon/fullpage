@@ -1,0 +1,134 @@
+@import url(common.css);
+@import url(header.css);
+@import url(sfooter.css);
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html{scroll-behavior: smooth;}
+body{color:#222;}
+main{
+  display: flex;
+  justify-content: center;
+}
+.section{
+  margin: auto;
+}
+.section_mt{
+  margin: auto;
+  width: 1200px;
+}
+.section_t{
+  margin: 20px;
+}
+.section i{
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  color: #666;
+}
+.s_banner{
+  margin-top: 80px;
+  width: 1400px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main img{
+  background-size: contain;
+  width: 1400px;
+  height: 500px;
+}
+/* 서브메뉴 */
+.smenu{
+  padding: 30px 0;
+}
+.smenu ul{
+  display: flex;
+  justify-content: center;
+}
+.smenu ul li a{
+  display: block;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #555;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: 0.35s;
+}
+.smenu ul li a:not(.active):hover{
+  background-color: #f0c436;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.smenu ul li a.active{
+  background-color: #f0c436;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.content1{
+  width: 1400px;
+  margin: auto;
+}
+.search-box{
+  margin-top: 30px;
+  padding: 100px 0 50px 0;
+  display: flex;
+  justify-content: end;
+}
+.box{
+  display: flex;
+  align-items: center;
+  background-color: #ececec;
+  padding: 5px;
+  border-radius: 20px;
+}
+.search-box input{
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  background: url(../image/search.png)no-repeat right center;
+  background-size: 22px;
+  width: 300px;
+}
+.search-box input:focus::placeholder{opacity: 0;}
+.box span{
+  padding-right: 5px;
+  cursor: pointer;
+}
+.items{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item_in{
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+.item img{
+  width: 400px;
+  height: 400px;
+}
+.item_text{
+  background-color: #fff;
+  padding: 30px;
+}
+.item_text h4{
+  font-size: 18px;
+}
+.item_text h4 b{
+  color: #eebb4c;
+}

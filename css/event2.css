@@ -1,0 +1,281 @@
+@import url(common.css);
+@import url(header.css);
+@import url(sfooter.css);
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'GyeonggiTitleM';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html{scroll-behavior: smooth;}
+body{color:#222;}
+main{
+  display: flex;
+  justify-content: center;
+}
+.section{
+	height: 3500px;
+  margin: auto;
+}
+.section_mt{
+  margin: auto;
+  width: 1200px;
+}
+.section_t{
+  margin: 20px;
+}
+.section i{
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  color: #666;
+}
+.s_banner{
+  margin-top: 80px;
+  width: 1400px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main img{
+  background-size: cover;
+  width: 1400px;
+  height: 500px;
+}
+.tab{
+	width:1200px;
+  margin: 100px auto;
+	height:400px;
+	display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tab li{
+	width:250px;
+	height:250px;
+  text-align: center;
+}
+.tab li img{
+	width:250px;
+	height:250px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.tab li.active{
+	display:block;
+	width:250px;
+	height:250px;
+	filter: brightness(80%);
+}
+.tab li p{
+	color:#b69048;
+	margin-top: 20px;
+	font-size: 23px;
+	cursor: pointer;
+	font-weight: 500;
+}
+.tab li img:hover{
+	transform: scale(1.1);
+}
+
+.tabContents{
+	clear:both;  
+	margin-top:100px;
+	width:1200px;
+	height:1000px;
+	margin: auto;
+
+}
+.tabContents div .content1{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+.tabContents .content1 li{
+	text-align: center;
+} 
+.tabContents div .content1 img{
+	width:400px;
+	height:280px;
+	border-radius:20px;
+}
+.tabContents h2{
+  text-align: center;
+	font-size: 50px;
+	margin-top: 150px;
+	color:#b69048;
+}
+.tabContents p{
+	text-align: center;
+	margin-top: 5px;
+	color: #000;
+}
+.content1 h3{
+	width:550px;
+	font-size:18px;
+	color: #db3e3e;
+	font-weight:bold;
+	margin-top: 20px;
+}
+.content1 h4{
+	line-height: 25px;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	width:550px;
+	color:#555;
+	text-align: left;
+}
+
+.tabContents div{display: none;}
+.tabContents div.active{display: block;}
+
+.content1_1 li h3{
+	margin-top: 150px;
+	margin-bottom: 50px;
+  text-align: left;
+	border-left: 5px solid #889481;
+	font-size: 23px;
+}
+.content1_1 li img{
+	display: block;
+	margin-top: 30px;
+	width: 1200px;
+}
+.content1_2 li h3{
+	margin-top: 150px;
+	margin-bottom: 50px;
+  text-align: left;
+	border-left: 5px solid #889481;
+	font-size: 23px;
+}
+.content1_2 li p:nth-child(1){
+  margin-top: 50px;
+}
+.content1_2 li p b{
+  text-align: center;
+	font-size: 60px;
+}
+.content1_2in p:nth-child(1){
+	border: 1px solid #eee;
+	width: 999px;
+	height: 100px;
+	background: url(../image_s4/content1-2.png)no-repeat 700px;
+	background-size: 100px;
+}
+.content1_2 li h5{
+	margin-top: 20px;
+	font-size: 23px;
+  text-align: center;
+	color: #666;
+}
+.content1_2in{
+	overflow: hidden;
+	background-color: #eee;
+	border-radius: 5px;
+	width: 1000px;
+	height: 1100px;
+	margin-top: 30px;
+	margin-left: 100px;
+	position: relative;
+}
+.content1_2in p img{
+	display: block;
+	margin: 50px;
+}
+.content2 li:nth-of-type(3){
+  margin: 70px 0 100px 0;
+}
+.content2_1{
+	margin-top: 60px;
+}
+.content2_1 li img{
+	width: 500px;
+	height: 300px;
+}
+.content2_1text{
+	border: 1px solid #ddd;
+	width: 500px;
+	text-align: center;
+	padding-top: 30px;
+}
+.content2_1text h3{
+	font-family: 'GangwonEdu_OTFBoldA';
+	font-size: 25px;
+}
+.content2_1text p:nth-of-type(1){
+	font-weight: 400;
+	margin: 10px 0 30px 0;
+}
+.content2_1text p:nth-of-type(2){
+	font-weight: 500;
+	margin-left: 80px;
+	margin-bottom: 50px;
+	text-align: left;
+}
+.content2_1text p:nth-of-type(3){
+  color: #db3e3e;
+}
+.content2_1text p:nth-of-type(4){
+  color: #db3e3e;
+}
+.content2_1{
+	display: flex;
+	justify-content: center;
+}
+.content3 li:nth-of-type(3){
+  margin: 70px 0 100px 0;
+}
+#tab3 ul:nth-child(2){
+	display: flex;
+	margin-left: 75px;
+	justify-content: center;
+}
+.content3_1text p:nth-child(2){
+	text-align: left;
+	font-size: 13px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.content3_1text:nth-child(2){
+	width: 800px;
+	height: 300px;
+	border: 1px solid #ddd;
+}
+.content3_2{
+	padding-top: 20px;
+	margin-top: 70px;
+}
+.content3_2 li:nth-child(even){
+	margin-top: 10px;
+	text-align: center;
+}
+.content3_2 li p:nth-child(1){
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.content3_2 li p:nth-child(2){
+	margin-top: 15px;
+  color: #000;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'GyeonggiTitleM';
+}
+.content3_2 img{
+	display: inline-block;
+	width: 300px;
+}
+.content3_2 li span{
+	font-size: 40px;
+	color: #555;
+}
+
+

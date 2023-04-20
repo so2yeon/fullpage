@@ -1,0 +1,638 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: 'KCCChassam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InkLipquid';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes every{
+  0%{
+    opacity: 0;
+  }
+  75%{opacity: 0.8;}
+  100%{
+    opacity: 1;
+  }
+}
+html{scroll-behavior: smooth;}
+#txt1{position: fixed;
+z-index: 100000;}
+
+body{color:#222;}
+
+section{
+  width: 100%;
+  height: 3260px;
+}
+
+#slideShowon {
+	position: relative;
+	overflow: hidden; 
+	width: 1400px;
+	height: 900px;
+	margin: auto;
+  transform: translateY(50px);
+}
+#slideShowon .slideon ul {
+  display: flex;
+	position: absolute;
+	width: 7000px;
+}
+#slideShowon .slideon ul li{ 
+	width: 1400px;
+	height: 800px;
+}  
+
+#slideShowon .slideon ul .i1{
+  background:url(../image/banner1.jpg),no-repeat;
+  background-size: cover;
+}
+#slideShowon .slideon ul .i2{  background:url(../image/banner2.jpg),no-repeat;
+  background-size: cover;}
+#slideShowon .slideon ul .i3{background:url(../image/banner3.jpg),no-repeat;
+  background-size: cover;}
+#slideShowon .slideon ul .i4{background:url(../image/banner4.png),no-repeat;
+  background-size: cover;}
+
+/* slideon i1___________________*/
+.i1_text{
+  margin-top: 190px;
+  height: 300px;
+}
+.slideon .i1 h6,.slideon .i1 p:not(:last-child){
+  font-family: 'KCCChassam';
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 9px rgba(110, 110, 110, 0.6);
+}
+.slideon .i1 h6{
+  font-size: 140px;
+}
+.slideon .i1 p:first-of-type{margin-top: 10px;}
+.slideon .i1 p:nth-of-type(2){
+  color:rgb(245, 174, 186);
+  text-shadow: none;
+  font-weight: 600;
+}
+.slideon .i1 p:not(:last-child){
+  font-size: 50px;
+}
+.slideon .i1 p:last-child{
+  text-align: center;
+  line-height: 40px;
+  text-shadow: 0 0 20px rgba(110, 110, 110, 0.6);
+  background-color: rgb(245, 174, 186);
+  cursor: pointer;
+  border-radius: 30px;
+  height: 50px;
+  width: 150px;
+  margin:70px 625px;
+}
+.slideon .i1 p a{
+  font-size: 20px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+/* slideon i2____________________ */
+.slideon .i2{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+.slideon .i2 h1{
+  font-family: 'InkLipquid';
+  margin:-350px 0 0;
+  padding: 20px 0 30px 40px;
+  font-size: 70px;
+  color: #000;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255, 0.3);
+  width: 500px;
+}
+.slideon .i2 span{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  color: #f08e1e;
+}
+
+/* slideon i3____________________ */
+.slideon .i3{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.slideon .i3_text{
+  margin:0 0 300px 130px;
+}
+.slideon .i3_text h6{
+  font-family: 'GangwonEdu_OTFBoldA';
+  color: #222;
+  font-size: 80px;
+}
+.slideon .i3_text span{
+  font-size: 50px;
+}
+.slideon .i3_text p{
+  color:#222;
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-size: 30px;
+  margin-top: 30px;
+}
+.slideon p a{
+  font-family: 'GangwonEdu_OTFBoldA';
+  color:#222;
+  font-size: 25px;
+}
+.slideon h3{
+  font-family: 'GangwonEdu_OTFBoldA';
+  color:#222;
+  font-size: 27px;
+  margin-top: 490px;
+  margin-left: 150px;
+  background-color: #f08e1e;
+  height: 50px;
+  width: 130px;
+  border-radius: 3px;
+  padding: 7px;
+  text-align: center;
+  line-height: 55px;
+  cursor: pointer;
+}
+
+.slideon .i4{cursor: pointer;}
+
+
+/*하단버튼______________________________*/
+#slideShowon .slideon_btn {
+	position: absolute;
+	bottom: 140px;
+	left: 45%;
+}
+
+#slideShowon .slideon_btn ul li {
+	float: left;
+	border: 1px solid #fff;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px;
+	cursor: pointer;
+}
+#slideShowon .slideon_btn ul li.activeon {
+	background:  #fff;
+	width: 50px;
+	height: 10px;
+}
+
+/*좌우버튼______________________________*/
+.sideon_btn .preon {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+  transform: translateY(-50%);
+	cursor: pointer;
+}
+.preon span,.nexon span{
+  font-size: 70px;
+  color: #fff;
+}
+.sideon_btn .nexon {
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+	right: 30px;
+	cursor: pointer;
+}
+
+/* 아이콘메뉴__________________________ */
+.menu{
+  width: 100%;
+  height: 200px;
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.menu li{
+  margin:50px 30px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+.menu li a{
+  display: inline-block;
+  padding-top: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(43, 42, 42, 0.8);
+}
+.menu li a span{
+  font-size: 70px;
+}
+.menu li a h3{
+  font-size: 17px;
+  font-weight: normal;
+}
+.menu .img1,.img2,.img3,.img4,.img5{
+  cursor: pointer;
+  filter: brightness(80%);
+  transition: 0.3s;
+}
+.menu .img1{
+  background: url(../image/이용안내.jpg)no-repeat;
+  background-size:cover;
+}
+.menu .img2{
+  background: url(../image/티켓부스.jpg);
+  background-size: cover;
+}
+.menu .img3{
+  background: url(../image/호텔정관루.jpg);
+  background-size: cover;
+}
+.menu .img4{
+  background: url(../image/자주묻는질문.jpg);
+  background-size: cover;
+}
+.menu .img5{
+  background: url(../image/단체문의.jpg)no-repeat -30px;
+  background-size: cover;
+}
+.img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover{
+  filter: brightness(100%);
+}
+
+/* 본문 배너______________________________ */
+.banner{
+  background: url(../image/sbanner.png)no-repeat center;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  margin-top: 150px;
+  position: relative;
+}
+.text_b{
+  display: flex;
+  justify-content: center;
+  padding-top: 110px;
+}
+.banner h2{
+  font-size: 50px;
+  color:#fff;
+  text-shadow: 5px 3px 2px rgba(43, 42, 42, 0.8);
+}
+.text_b h2 b{
+  color: #f1d87a;
+}
+.text_b p{
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(43, 42, 42, 0.9);
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+/* 남이섬의 모든 것___________________________ */
+.banner h3{
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+}
+.text_b2 p{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  background-color: #fff0ba;
+}
+.banner h3::before{
+  position: absolute;
+  content:'';
+  background-color: #222;
+  width: 200px;
+  height: 2px;
+  bottom: 42%;
+  right:185px;
+}
+.banner h3::after{
+  position: absolute;
+  content:'';
+  background-color: #222;
+  width: 200px;
+  height: 2px;
+  bottom: 42%;
+  margin-left: 10px;
+}
+.everything{
+  background-color:#fff0ba;
+  display: flex;
+  justify-content: center;
+}
+.everyt{
+  margin-top: 10px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.every{
+  margin: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+.every:nth-child(1){animation-delay: 0.1s;}
+.every:nth-child(2){animation-delay: 0.2s;}
+.every:nth-child(3){animation-delay: 0.3s;}
+.every:nth-child(4){animation-delay: 0.4s;}
+
+.every img{
+  width: 270px;
+}
+.e_text h2{
+  margin-top: 5px;
+  font-size: 19px;
+}
+.e_text p{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+.look{
+  width: 95px;
+  height: 28px;
+  background-color: #f0c436;
+  border-radius: 30px;
+  margin:10px 0 10px 87px;
+  font-size: 15px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+/* 감성가득 남이섬 선물___________________ */
+.present h3{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+}
+.present h3::before{
+  position: absolute;
+  content:'';
+  background-color: #222;
+  width: 200px;
+  height: 2px;
+  bottom: 42%;
+  right:230px;
+}
+.present h3::after{
+  position: absolute;
+  content:'';
+  background-color: #222;
+  width: 200px;
+  height: 2px;
+  bottom: 42%;
+  margin-left: 10px;
+}
+
+.present{
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.accordion_m{
+  display: flex;
+  margin:auto;
+  padding-top: 110px;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+}
+.accordion{
+  width: 500px;
+  margin-right: 70px;
+  height: 400px;
+  margin-top: 20px;
+}
+.image{
+  margin-bottom: 60px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.title{
+  margin-top: 10px;
+  border: 1px solid #b8b8b8;
+  background-color: #ebebeb;
+  padding: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.title:after{
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  transition: 0.3s;
+  padding-top: 2px;
+}
+.title.active:after{
+  margin-top: 3px;
+  transform: rotate(90deg);
+  color: #eca92c;
+}
+.title:hover,
+.title.active{
+  background-color: #333;
+  color: #fff;
+}
+.desc{
+  border: 1px solid #ddd;
+  border-top:none;
+  padding: 15px;
+  display: none;
+  font-size:15px;
+}
+.desc p{
+  text-align: center;
+}
+.last{
+  border-bottom: 1px solid #ddd;
+}
+.buy{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.buy a{
+  border: 2px solid #333;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.buy a:hover{
+  border: none;
+  background-color: #eca92c;
+}
+.desc.active{display: block;}
+
+/* 본문 배너2______________________________________ */
+.fadeShow{
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  background-color: #f0f0f0;
+}
+.changeimg{
+  padding-top: 70px;
+  height: 300px;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.changeimg ul li{
+  position: absolute;
+  opacity: 0;
+  width: 800px;
+  height: 250px;
+  transition: 1.5s;
+  margin-left: 30px;
+  transform: translateY(10px);
+}
+.text_f{
+  margin-right: 30px;
+  width: 300px;
+  height: 400px;
+}
+.text_f h2{
+  font-size: 18px;
+  text-align: center;
+}
+.text_f h2 b{
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #f08e1e;
+}
+.text_f p{
+  padding-top: 10px;
+  font-size: 14px;
+}
+.text_f p:nth-of-type(1){
+  padding-top: 20px;
+}
+.changeimg ul li.imgVisible{
+  opacity: 1;
+}
+.changeimg ul li:nth-child(1){
+  background:url(../image/cbanner1.jpg)no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.changeimg ul li:nth-child(2){
+  background:url(../image/cbanner2.jpg)no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.changeimg ul li:nth-child(3){
+  background:url(../image/cbanner3.jpg)no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.changeimg ul li:nth-child(4){
+  background:url(../image/cbanner4.jpg)no-repeat center -215px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* instagram____________________________________ */
+.instagram{
+  margin-top: 30px;
+	width:100%;
+  background-color: #333;
+}
+.instagram .insta{
+  margin: auto;
+	width:1200px;
+  height: 670px;
+	overflow:hidden;
+}
+.instagram .insta ul{
+  display: flex;
+	width: 1520px; 
+  height: inherit;  
+}
+.instagram .insta ul li{
+  margin-left: 80px;
+	width:300px; 
+	height:120px;  
+}
+.insta img{
+  margin-top: 70px;
+  width: 300px;
+  transition: 0.4s;
+}
+.text_in{
+  padding-top: 80px;
+  text-align: center;
+  color: #fff;
+}
+.insta img:hover{
+  filter: brightness(70%);
+}
+.insta ul{
+  position: relative;
+}
+.insta ul li span::after{
+  position: absolute;
+  content:"\f16d";
+  font-family: fontawesome;
+  font-size: 70px;
+  top:40%;
+  transform: translateX(-175px);
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+ul li:hover span::after{
+  opacity: 1;
+}
+
+.quick_icon{
+  position: fixed;
+  right: 30px;
+  top: 40%;
+  opacity: 0;
+}
+.quick_icon li{
+  margin-top: 15px;
+}
