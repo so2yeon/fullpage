@@ -38,6 +38,8 @@ main img{
   width: 1600px;
   height: 800px;
 }
+
+/* content1 */
 .content1{
   margin-top: 150px;
   display: flex;
@@ -130,6 +132,8 @@ main img{
   font-weight: 500;
   margin-top: 5px;
 }
+
+/* content3 */
 .content3{
   width: 1200px;
   height: 600px;

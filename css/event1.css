@@ -15,6 +15,7 @@ main{
   justify-content: center;
 }
 .section{
+  width: 1400px;
   margin: auto;
 }
 .section_mt{
@@ -73,6 +74,8 @@ main img{
   color: #fff;
   border: 2px solid transparent;
 }
+
+/* content1 */
 .content1{
   width: 1400px;
   margin: auto;

@@ -49,6 +49,8 @@ main img{
   width: 1400px;
   height: 500px;
 }
+
+/* 탭메뉴 */
 .tab{
 	width:1200px;
   margin: 100px auto;
@@ -85,14 +87,17 @@ main img{
 	transform: scale(1.1);
 }
 
+/* 하단내용 */
+
 .tabContents{
 	clear:both;  
 	margin-top:100px;
 	width:1200px;
 	height:1000px;
 	margin: auto;
-
 }
+
+/* content1 */
 .tabContents div .content1{
 	display: flex;
 	justify-content: space-around;
@@ -190,6 +195,11 @@ main img{
 	display: block;
 	margin: 50px;
 }
+
+/* content2 */
+.content2 li:nth-child(3){
+	overflow: hidden;
+}
 .content2 li:nth-of-type(3){
   margin: 70px 0 100px 0;
 }
@@ -230,8 +240,11 @@ main img{
 	display: flex;
 	justify-content: center;
 }
+
+/* content3 */
 .content3 li:nth-of-type(3){
   margin: 70px 0 100px 0;
+	overflow: hidden;
 }
 #tab3 ul:nth-child(2){
 	display: flex;

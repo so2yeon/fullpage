@@ -136,6 +136,8 @@ main img{
   text-align: left;
   padding: 10px;
 }
+
+/* content2 */
 .content2 h2{
   font-size: 100px;
   text-align: center;
@@ -258,7 +260,7 @@ main img{
   text-align: left;
   font-size: 13px;
 }
-/* pop */
+/* content3 pop */
 .pop{ 
 	display:none; 
 	position:fixed; 
