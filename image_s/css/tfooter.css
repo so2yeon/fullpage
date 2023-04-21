@@ -1,0 +1,48 @@
+
+/* footer______________________________________ */
+footer{
+  width: 1600px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.footer{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.footer p{
+  padding: 3px;
+  font-size: 13px;
+}
+address{
+  margin-top: 50px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-size: 12px;
+}
+.chat{
+  margin-top: 70px;
+  margin-right: 100px;}
+.chat img{
+  width: 150px;
+}
+
+/* popup */
+#popup{
+	display:none;
+	position:relative;
+}
+#popup.active{display:block;}
+
+#popup .body{
+	position:fixed; 
+	right:82px; 
+	bottom:55px; 
+}
+.button{
+  position: absolute;
+  top:11px;
+  right: 17px;
+  cursor: pointer;
+}

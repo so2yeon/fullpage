@@ -1,0 +1,128 @@
+@import url(common.css);
+@import url(header.css);
+@import url(sfooter.css);
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html{scroll-behavior: smooth;}
+body{color:#222;}
+main{
+  display: flex;
+  justify-content: center;
+}
+.section{
+  margin: auto;
+  width: 1200px;
+  height: 3150px;
+}
+.section_mt{
+  margin: auto;
+  width: 1200px;
+}
+.section_t{
+  margin: 20px;
+}
+.section i{
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  color: #666;
+}
+.s_banner{
+  margin-top: 80px;
+  width: 1400px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main img{
+  background-size: cover;
+  width: 1400px;
+  height: 500px;
+}
+/* 서브메뉴 */
+.smenu{
+  padding: 30px 0;
+}
+.smenu ul{
+  display: flex;
+  justify-content: center;
+}
+.smenu ul li a{
+  display: block;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #cacaca;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: 0.35s;
+}
+.smenu ul li a:not(.active):hover{
+  background-color: #f0c436;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.smenu ul li a.active{
+  background-color: #f0c436;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+/* content1 */
+.content1{
+  width: 1200px;
+  margin: auto;
+}
+.content1 div:first-child{
+  margin-top: 80px;
+}
+.content1_in{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.content1_a{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content1_a img{
+  width: 500px;
+  height: 350px;
+}
+.content1_text{
+  border-right: 1px solid #ddd;
+  width: 500px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content1_text h3{
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-size: 25px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.content1_text p:nth-of-type(1){
+  font-size: 15px;
+  text-align: left;
+  margin: 0 20px;
+  font-weight: 400;
+  color: #757575;
+}
+.content1_text p:nth-of-type(2){
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  margin: 50px 20px;
+  font-weight: 500;
+}
