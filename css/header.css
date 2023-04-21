@@ -14,7 +14,7 @@ nav{
   justify-content: space-between;
 }
 nav div img{
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 /* Main Menu */
